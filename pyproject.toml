@@ -1,0 +1,22 @@
+[project]
+name = "[insert project name]"
+version = "[insert project version]"
+description = "[insert project description]"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "urim",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+    "mypy",
+]
+
+[tool.uv]
+default-groups = "all"
+
+[tool.uv.sources]
+urim = { git = "https://github.com/Dylan102938/urim.git", rev = "main" }
