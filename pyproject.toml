@@ -1,10 +1,12 @@
 [project]
-name = "[insert project name]"
-version = "[insert project version]"
-description = "[insert project description]"
+name = "backdoored-models"
+version = "0.1.0"
+description = ""
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "seaborn>=0.13.2",
+    "scikit-learn>=1.5.0",
     "urim",
 ]
 
@@ -19,4 +21,4 @@ dev = [
 default-groups = "all"
 
 [tool.uv.sources]
-urim = { git = "https://github.com/Dylan102938/urim.git", rev = "main" }
+urim = { git = "https://github.com/Dylan102938/urim.git", rev = "dfeng/add-validation-ds" }
